@@ -1,0 +1,208 @@
+.navbar {
+    background: #c6ffdd;
+    background: -webkit-linear-gradient(
+        to left,
+        #f7797d,
+        #fbd786,
+        #c6ffdd
+    );
+    background: linear-gradient(
+        to left,
+        #f7797d,
+        #fbd786,
+        #c6ffdd
+    );
+}
+
+body {
+    background: #c6ffdd;
+    background: -webkit-linear-gradient(
+        to left,
+        #f7797d,
+        #fbd786,
+        #c6ffdd
+    );
+    background: linear-gradient(
+        to left,
+        #f7797d,
+        #fbd786,
+        #c6ffdd
+    );
+}
+
+.parallax-header {
+    padding: 50px;
+    background: #000;
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-content {
+    padding: 50px 0 200px 0;
+}
+
+.content {
+    margin: 100px 50px;
+    box-shadow: 0 0 20px -6px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+.content .left {
+    padding-top: 20px;
+}
+
+.content .right {
+    padding: 25px;
+}
+
+.parallax3 {
+    padding: 100px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax3-content {
+    padding: 10px 10px;
+}
+
+h1 {
+    color: #2c2c2c;
+}
+
+.komen {
+    padding: 120px;
+}
+
+#carouselExampleCaptions {
+    box-shadow: 0 0 20px -6px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+.card {
+    border-radius: 15px;
+    box-shadow: 0 0 20px -6px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+    background: #1b1b1b;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+/* css tombol kirim pesan */
+.btn-pesan {
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    border: 3px solid #ff2034;
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    font-family: inherit;
+}
+
+.btn-pesan::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ff2034;
+    transform: translateX(-100%);
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+.btn-pesan:hover::before {
+    transform: translateX(0);
+}
+/* Catalogue hover */
+/* [1] The container */
+.img-hover-zoom {
+    height: 300px; /* [1.1] Set it as per your need */
+    overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+    transition: transform 0.5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+    transform: scale(1.5);
+}
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Buy button */
+.buy {
+    background: linear-gradient(-45deg, #f7797d, #ffc43b);
+    box-shadow: 0 0 20px -6px rgba(0, 0, 0, 0.2);
+    background-size: 800% 400%;
+    display: inline-block;
+    border: none;
+    margin: auto;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(252, 255, 221);
+    transition: all 0.5s ease-in-out;
+    animation: gradient 10s infinite cubic-bezier(0.62, 0.28, 0.23, 0.99) both;
+}
+
+.buy:hover {
+    animation: gradient 2s infinite;
+    color:#444444;
+    box-shadow: 0px 10px 10px #44444423;
+    transform: scale(1.05);
+}
+
+.buy:active {
+    animation: gradient 2s infinite;
+    transform: scale(0.8);
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.btn {
+    margin: auto;
+    padding: 10px;
+    position: absolute;
+    right: 15px;
+}
+.wrap{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+a{
+    text-decoration:none;
+}
